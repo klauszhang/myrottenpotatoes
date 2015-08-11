@@ -1,7 +1,16 @@
 source 'https://rubygems.org'
 
+##### add this into you Gemfile#####
 # use Haml for templates
 gem 'haml'
+
+# Ruby 2.1+ no longer support "debugger", by default it use "byebug" instead.
+#deleted:
+#gem "debugger"
+
+# prevent error from accessing "attr_accessible"
+gem 'protected_attributes'
+########
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.3'
